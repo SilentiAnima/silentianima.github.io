@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --collor-bg: #000000;
+    --collor-white: #ffffff;
+    --color-gray: #252525;
+    --color-orange: orange;
+    --color-red: #940000;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    background-color: var(--collor-bg);
+    color: var(--collor-white);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .profile {
+    text-align: center;
+    max-width: 75vw;
+    width: 100%;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    color: var(--color-orange);
+    margin-bottom: 20px;
+  }
+  
+  .links a {
+    display: block;
+    width: 90vw; /* кнопка займе всю ширину контейнера */
+    max-width: 500px; /* обмеження максимальної ширини */
+    margin: 12px auto; /* центрування */
+    padding: 32px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .links a:hover {
+    background-color: #555;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+  }
+
+  .par {
+    margin-top: 5px;
+    color: var(--color-red);
+    font-size: 12px;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+
+  /* 📱 Адаптація для телефонів */
+@media (max-width: 480px) {
+    .avatar {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .links a {
+      font-size: 14px;
+      padding: 2.5vh;
+      width: 75%;
+    }
+  
+    .profile {
+      max-width: 100%;
+    }
+  }
+  
+  /* 📲 Адаптація для планшетів */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .avatar {
+      width: 110px;
+      height: 110px;
+    }
+  
+    .links a {
+      font-size: 16px;
+      padding: 2.5vh;
+      width: 75%;
+    }
+  
+    .profile {
+      max-width: 90%;
+    }
+    
+  }
